@@ -2,6 +2,15 @@
 
 A reproducible **Python + SQL** blockchain intelligence portfolio demonstration using **entirely fabricated wallet transfers**. The project models directed transaction relationships, summarizes wallet activity, and measures graph distance to a **synthetic** review seed. It does not use real wallet addresses or real sanctions/watchlist information.
 
+## Business question
+How can an investigator explore directed wallet-transfer relationships and distinguish graph proximity from evidence of actual fund flows?
+
+## Demonstrated deliverable
+A directed wallet-network explorer using synthetic transfers, inbound/outbound wallet metrics, shortest-hop reachability to fabricated seed labels, and transparent demonstration-only prioritization.
+
+## Engineering verification
+**7 automated tests** cover graph behavior, invalid records, unreachable wallets, and SQLite-to-Python wallet-metric parity. GitHub Actions runs the suite and reproducible analysis pipeline on each push and pull request.
+
 ## Interactive Streamlit dashboard
 
 **[Launch the live wallet network dashboard](https://blockchain-wallet-risk-analysis-ve5ty6mxctevmkvhogjvxl.streamlit.app/)** · [View source code](https://github.com/suntzu2308-bit/blockchain-wallet-risk-analysis)
@@ -37,7 +46,7 @@ The pipeline writes `output/wallet_summary.json` with per-wallet activity metric
 - `data/seed_labels.csv` — explicitly synthetic watchlist seed
 - `src/analyze.py` — validation, wallet metrics and directed graph traversal
 - `sql/wallet_metrics.sql` — SQLite wallet metrics
-- `tests/test_analyze.py` — regression tests
+- `tests/test_analyze.py` and `tests/test_sql_parity.py` — graph regression and SQLite parity tests
 - `docs/methodology.md` — definitions, assumptions, safeguards and limitations
 - `.github/workflows/tests.yml` — CI tests and smoke run
 
@@ -49,6 +58,6 @@ There is no on-chain API integration, real-world attribution, customer data, san
 
 ## Status
 
-Initial code and automated tests published. Interactive dashboard code is published and the Streamlit deployment URL is available.
+Live dashboard published. Seven automated tests, including SQL/Python wallet-metric parity, passed in GitHub Actions on the synthetic fixture.
 
 MIT licensed.
