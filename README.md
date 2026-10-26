@@ -2,6 +2,17 @@
 
 A reproducible **Python + SQL** blockchain intelligence portfolio demonstration using **entirely fabricated wallet transfers**. The project models directed transaction relationships, summarizes wallet activity, and measures graph distance to a **synthetic** review seed. It does not use real wallet addresses or real sanctions/watchlist information.
 
+## Interactive Streamlit dashboard
+
+Explore synthetic wallet relationships through a directed network diagram, wallet and priority filters, transaction tables, comparative charts, and CSV export.
+
+```bash
+python -m pip install -r requirements.txt
+python -m streamlit run app.py
+```
+
+The dashboard is committed to GitHub but is **not yet deployed publicly**. All wallet labels and transactions are fabricated.
+
 ## Run the analysis
 
 Requires Python 3.10+ and standard library only:
@@ -36,6 +47,6 @@ There is no on-chain API integration, real-world attribution, customer data, san
 
 ## Status
 
-Initial code and automated tests published. An interactive visualization and deployed demo are planned, not yet live.
+Initial code and automated tests published. Interactive dashboard code is published; public Streamlit deployment is pending.
 
 MIT licensed.
