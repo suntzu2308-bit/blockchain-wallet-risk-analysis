@@ -2,6 +2,19 @@
 
 A reproducible **Python + SQL** blockchain intelligence portfolio demonstration using **entirely fabricated wallet transfers**. The project models directed transaction relationships, summarizes wallet activity, and measures graph distance to a **synthetic** review seed. It does not use real wallet addresses or real sanctions/watchlist information.
 
+
+## Dashboard screenshots
+
+Four screenshots from the live synthetic-data dashboard show the wallet network, transaction activity, metrics, and investigation interface.
+
+![Blockchain dashboard screenshot 1](Screenshot_20261026_053057_Chrome.jpg)
+
+![Blockchain dashboard screenshot 2](Screenshot_20261026_053112_Chrome.jpg)
+
+![Blockchain dashboard screenshot 3](Screenshot_20261026_053146_Chrome.jpg)
+
+![Blockchain dashboard screenshot 4](Screenshot_20261026_053205_Chrome.jpg)
+
 ## Business question
 How can an investigator explore directed wallet-transfer relationships and distinguish graph proximity from evidence of actual fund flows?
 
